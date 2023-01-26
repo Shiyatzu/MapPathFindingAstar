@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Maps">
+      <UniqueIdentifier>{8a891782-9bfd-4eeb-964e-be553006a3b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PathFindingA+.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dao-map\arena2.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\arena.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc000d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc100d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc101d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc200d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc201d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc202d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc203d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc204d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc300d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc501d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc502d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc503d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc504d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc505d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc997d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\brc999d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\combat.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\combat2.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den000d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den001d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den005d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den009d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den011d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den012d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den020d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den101d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den200d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den200n.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den201d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den202d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den203d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den204d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den206d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den207d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den308d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den312d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den400d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den401d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den403d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den404d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den405d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den407d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den408d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den500d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den501d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den502d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den504d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den505d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den510d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den520d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den600d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den601d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den602d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den900d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den901d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\den998d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\rmtst03.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\rmtst.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\rmtst01.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\hrt000d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\hrt001d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\hrt002d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\hrt201d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\hrt201n.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\isound1.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak100c.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak100d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak100n.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak101d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak102d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak103d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak104d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak105d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak106d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak107d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak108d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak109d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak110d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak200d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak201d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak202d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak203d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak250d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak300d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak302d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak303d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak304d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak307d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak308d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak400d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak401d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak403d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak404d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak405d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak503d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak504d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak505d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak506d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak507d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak510d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak511d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak512d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak513d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak514d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak515d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak519d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lak526d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lgt101d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lgt300d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lgt600d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lgt601d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lgt602d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lgt603d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lgt604d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\lgt605d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\oth999d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz000d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz100d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz101d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz102d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz103d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz105d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz106d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz107d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz200d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz201d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz203d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz300d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz301d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz302d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz303d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz304d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz500d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz601d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz700d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz701d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz702d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz703d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz704d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz800d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz900d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz901d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\orz999d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\ost000a.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\ost000t.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\ost001d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\ost002d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\ost003d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\ost004d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\ost100d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\ost101d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\ost102d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\oth000d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="dao-map\oth001d.map">
+      <Filter>Source Files\Maps</Filter>
+    </None>
+    <None Include="arena.map">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

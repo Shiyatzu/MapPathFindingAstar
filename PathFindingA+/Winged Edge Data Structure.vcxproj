@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{3922250A-29DA-43AB-9B0B-F947ADA4FE6C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WingedEdgeDataStructure</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>PathFindingA+</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\tozea\source\repos\freeglut-MSVC-3.0.0-2.mp;D:\Users\Toze\source\repos\freeglut-MSVC-3.0.0-2.mp\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\tozea\source\repos\freeglut-MSVC-3.0.0-2.mp\freeglut\lib;D:\Users\Toze\source\repos\freeglut-MSVC-3.0.0-2.mp\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="PathFindingA+.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cell.h" />
+    <ClInclude Include="Grid.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="arena.map" />
+    <None Include="dao-map\arena.map" />
+    <None Include="dao-map\arena2.map" />
+    <None Include="dao-map\brc000d.map" />
+    <None Include="dao-map\brc100d.map" />
+    <None Include="dao-map\brc101d.map" />
+    <None Include="dao-map\brc200d.map" />
+    <None Include="dao-map\brc201d.map" />
+    <None Include="dao-map\brc202d.map" />
+    <None Include="dao-map\brc203d.map" />
+    <None Include="dao-map\brc204d.map" />
+    <None Include="dao-map\brc300d.map" />
+    <None Include="dao-map\brc501d.map" />
+    <None Include="dao-map\brc502d.map" />
+    <None Include="dao-map\brc503d.map" />
+    <None Include="dao-map\brc504d.map" />
+    <None Include="dao-map\brc505d.map" />
+    <None Include="dao-map\brc997d.map" />
+    <None Include="dao-map\brc999d.map" />
+    <None Include="dao-map\combat.map" />
+    <None Include="dao-map\combat2.map" />
+    <None Include="dao-map\den000d.map" />
+    <None Include="dao-map\den001d.map" />
+    <None Include="dao-map\den005d.map" />
+    <None Include="dao-map\den009d.map" />
+    <None Include="dao-map\den011d.map" />
+    <None Include="dao-map\den012d.map" />
+    <None Include="dao-map\den020d.map" />
+    <None Include="dao-map\den101d.map" />
+    <None Include="dao-map\den200d.map" />
+    <None Include="dao-map\den200n.map" />
+    <None Include="dao-map\den201d.map" />
+    <None Include="dao-map\den202d.map" />
+    <None Include="dao-map\den203d.map" />
+    <None Include="dao-map\den204d.map" />
+    <None Include="dao-map\den206d.map" />
+    <None Include="dao-map\den207d.map" />
+    <None Include="dao-map\den308d.map" />
+    <None Include="dao-map\den312d.map" />
+    <None Include="dao-map\den400d.map" />
+    <None Include="dao-map\den401d.map" />
+    <None Include="dao-map\den403d.map" />
+    <None Include="dao-map\den404d.map" />
+    <None Include="dao-map\den405d.map" />
+    <None Include="dao-map\den407d.map" />
+    <None Include="dao-map\den408d.map" />
+    <None Include="dao-map\den500d.map" />
+    <None Include="dao-map\den501d.map" />
+    <None Include="dao-map\den502d.map" />
+    <None Include="dao-map\den504d.map" />
+    <None Include="dao-map\den505d.map" />
+    <None Include="dao-map\den510d.map" />
+    <None Include="dao-map\den520d.map" />
+    <None Include="dao-map\den600d.map" />
+    <None Include="dao-map\den601d.map" />
+    <None Include="dao-map\den602d.map" />
+    <None Include="dao-map\den900d.map" />
+    <None Include="dao-map\den901d.map" />
+    <None Include="dao-map\den998d.map" />
+    <None Include="dao-map\hrt000d.map" />
+    <None Include="dao-map\hrt001d.map" />
+    <None Include="dao-map\hrt002d.map" />
+    <None Include="dao-map\hrt201d.map" />
+    <None Include="dao-map\hrt201n.map" />
+    <None Include="dao-map\isound1.map" />
+    <None Include="dao-map\lak100c.map" />
+    <None Include="dao-map\lak100d.map" />
+    <None Include="dao-map\lak100n.map" />
+    <None Include="dao-map\lak101d.map" />
+    <None Include="dao-map\lak102d.map" />
+    <None Include="dao-map\lak103d.map" />
+    <None Include="dao-map\lak104d.map" />
+    <None Include="dao-map\lak105d.map" />
+    <None Include="dao-map\lak106d.map" />
+    <None Include="dao-map\lak107d.map" />
+    <None Include="dao-map\lak108d.map" />
+    <None Include="dao-map\lak109d.map" />
+    <None Include="dao-map\lak110d.map" />
+    <None Include="dao-map\lak200d.map" />
+    <None Include="dao-map\lak201d.map" />
+    <None Include="dao-map\lak202d.map" />
+    <None Include="dao-map\lak203d.map" />
+    <None Include="dao-map\lak250d.map" />
+    <None Include="dao-map\lak300d.map" />
+    <None Include="dao-map\lak302d.map" />
+    <None Include="dao-map\lak303d.map" />
+    <None Include="dao-map\lak304d.map" />
+    <None Include="dao-map\lak307d.map" />
+    <None Include="dao-map\lak308d.map" />
+    <None Include="dao-map\lak400d.map" />
+    <None Include="dao-map\lak401d.map" />
+    <None Include="dao-map\lak403d.map" />
+    <None Include="dao-map\lak404d.map" />
+    <None Include="dao-map\lak405d.map" />
+    <None Include="dao-map\lak503d.map" />
+    <None Include="dao-map\lak504d.map" />
+    <None Include="dao-map\lak505d.map" />
+    <None Include="dao-map\lak506d.map" />
+    <None Include="dao-map\lak507d.map" />
+    <None Include="dao-map\lak510d.map" />
+    <None Include="dao-map\lak511d.map" />
+    <None Include="dao-map\lak512d.map" />
+    <None Include="dao-map\lak513d.map" />
+    <None Include="dao-map\lak514d.map" />
+    <None Include="dao-map\lak515d.map" />
+    <None Include="dao-map\lak519d.map" />
+    <None Include="dao-map\lak526d.map" />
+    <None Include="dao-map\lgt101d.map" />
+    <None Include="dao-map\lgt300d.map" />
+    <None Include="dao-map\lgt600d.map" />
+    <None Include="dao-map\lgt601d.map" />
+    <None Include="dao-map\lgt602d.map" />
+    <None Include="dao-map\lgt603d.map" />
+    <None Include="dao-map\lgt604d.map" />
+    <None Include="dao-map\lgt605d.map" />
+    <None Include="dao-map\orz000d.map" />
+    <None Include="dao-map\orz100d.map" />
+    <None Include="dao-map\orz101d.map" />
+    <None Include="dao-map\orz102d.map" />
+    <None Include="dao-map\orz103d.map" />
+    <None Include="dao-map\orz105d.map" />
+    <None Include="dao-map\orz106d.map" />
+    <None Include="dao-map\orz107d.map" />
+    <None Include="dao-map\orz200d.map" />
+    <None Include="dao-map\orz201d.map" />
+    <None Include="dao-map\orz203d.map" />
+    <None Include="dao-map\orz300d.map" />
+    <None Include="dao-map\orz301d.map" />
+    <None Include="dao-map\orz302d.map" />
+    <None Include="dao-map\orz303d.map" />
+    <None Include="dao-map\orz304d.map" />
+    <None Include="dao-map\orz500d.map" />
+    <None Include="dao-map\orz601d.map" />
+    <None Include="dao-map\orz700d.map" />
+    <None Include="dao-map\orz701d.map" />
+    <None Include="dao-map\orz702d.map" />
+    <None Include="dao-map\orz703d.map" />
+    <None Include="dao-map\orz704d.map" />
+    <None Include="dao-map\orz800d.map" />
+    <None Include="dao-map\orz900d.map" />
+    <None Include="dao-map\orz901d.map" />
+    <None Include="dao-map\orz999d.map" />
+    <None Include="dao-map\ost000a.map" />
+    <None Include="dao-map\ost000t.map" />
+    <None Include="dao-map\ost001d.map" />
+    <None Include="dao-map\ost002d.map" />
+    <None Include="dao-map\ost003d.map" />
+    <None Include="dao-map\ost004d.map" />
+    <None Include="dao-map\ost100d.map" />
+    <None Include="dao-map\ost101d.map" />
+    <None Include="dao-map\ost102d.map" />
+    <None Include="dao-map\oth000d.map" />
+    <None Include="dao-map\oth001d.map" />
+    <None Include="dao-map\oth999d.map" />
+    <None Include="dao-map\rmtst.map" />
+    <None Include="dao-map\rmtst01.map" />
+    <None Include="dao-map\rmtst03.map" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
