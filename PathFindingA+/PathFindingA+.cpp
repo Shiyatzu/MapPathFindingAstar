@@ -64,7 +64,7 @@ void reshape(GLsizei width, GLsizei height) {  // GLsizei for non-negative integ
 void processNormalKeys(unsigned char key, int xx, int yy) {
 	switch (key) {
 		cout << camera_x, camera_y, camera_z;
-	case 'x':
+	case 'x': //Start and End Position
 		map.aStar(5, 169, 302, 5);
 		break;
 	case 'w':
